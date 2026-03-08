@@ -1,0 +1,15 @@
+{
+  "name": "my_package",
+  "version": "1.0.0",
+  "description": "Email sending module using Nodemailer",
+  "main": "m0603.js",
+  "keywords": ["email", "gmail", "nodemailer"],
+  "author": "Dianich",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+    "peerDependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

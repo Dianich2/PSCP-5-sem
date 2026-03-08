@@ -1,0 +1,10 @@
+^C:\ФИТ\ЛАБОРАТОРНЫЕ РАБОТЫ\5 СЕМ\ПСКП\ЛАБОРАТОРНАЯ РАБОТА 13\ЗАДАНИЕ 1\CLIENT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/ФИТ/Лабораторные работы/5 сем/ПСКП/Лабораторная работа 13/Задание 1/client" "-BC:/ФИТ/Лабораторные работы/5 сем/ПСКП/Лабораторная работа 13/Задание 1/client/build" --check-stamp-file "C:/ФИТ/Лабораторные работы/5 сем/ПСКП/Лабораторная работа 13/Задание 1/client/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+C:/ФИТ/Лабораторные работы/5 сем/ПСКП/Лабораторная работа 13/Задание 1/server_udp/build/CMakeFiles/server_udp.dir
+C:/ФИТ/Лабораторные работы/5 сем/ПСКП/Лабораторная работа 13/Задание 1/server_udp/build/CMakeFiles/ALL_BUILD.dir
+C:/ФИТ/Лабораторные работы/5 сем/ПСКП/Лабораторная работа 13/Задание 1/server_udp/build/CMakeFiles/ZERO_CHECK.dir

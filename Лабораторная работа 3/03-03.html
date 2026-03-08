@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Task 3</title>
+    </head>
+    <body>
+        <div id="factorials"></div>
+        <script>
+            let f = document.getElementById('factorials');
+            const start = Date.now();
+
+            for(let i = 0; i <= 20; i++){
+                fetch(`/fact?k=${i}`,
+                    {
+                        method:'GET',
+                        headers: {'Accept': 'application/json'}
+                    }
+                )
+                .then(response => response.json())
+                .then(data =>{
+                    f.innerHTML += `<p>${i + 1}. Результат: ${Date.now() - start}-${data.k}\/ ${data.fact}</p>`
+                });
+            }
+        </script>
+    </body>
+</html>

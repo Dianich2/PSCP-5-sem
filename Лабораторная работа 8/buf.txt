@@ -1,0 +1,7 @@
+--- Задание 1 ---
+--- Проверяем CONNECTION ID ---
+for(let i = 0; i < 3; i++) {
+    await fetch('http://localhost:5000/connection');
+    await new Promise(resolve => setTimeout(resolve, 1500));
+}
+

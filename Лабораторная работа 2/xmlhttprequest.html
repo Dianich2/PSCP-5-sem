@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>02-04</title>
+    </head>
+    <body>
+        <h1>Данные студента, полученные с помощью XMLHTTPRequest</h1>
+        <p id="student-data"></p>
+        <script>
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'http://localhost:5000/api/name', true);
+
+            xhr.onload = function(){
+                if(xhr.status === 200){
+                    document.getElementById('student-data').textContent = xhr.responseText;
+                }
+                else{
+                    document.getElementById('student-data').textContent = "Код статуса: " + xhr.stat + '\nСообщение об ошибке: ' + xhr.responseText;
+                }
+            }
+
+            xhr.onerror = function(){
+                document.getElementById('student-data').textContent = "Ошибка"; 
+            }
+            xhr.send();
+        </script>
+    </body>
+</html>

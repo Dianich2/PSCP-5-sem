@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>02-06</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <h1>Данные студента, полученные с помощью jQuery.Ajax</h1>
+        <p id="student-data"></p>
+        <script>
+            $.ajax({
+                url: 'http://localhost:5000/api/name',
+                method: 'get',
+                dataType: 'text',
+                success:function(studentData){
+                    $('#student-data').text(studentData);
+                },
+                error:function(xhr, status, err){
+                    $('#student-data').text('Ошибка: ' + err);
+                }
+            });
+        </script>
+    </body>
+</html>

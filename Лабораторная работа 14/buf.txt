@@ -1,0 +1,108 @@
+------------------------------ FACULTY -----------------------------------------------------
+// GET /api/faculties
+
+// POST /api/faculties  
+{
+	"faculty": "test",
+    "faculty_name": "TEST"
+}
+
+// PUT /api/faculties  
+{
+	"faculty": "test",
+    "faculty_name": "TEST2"
+}
+  
+// DELETE /api/faculties/test
+
+
+------------------------------ PULPIT ---------------------------------------------------------
+// GET /api/pulpits
+
+// POST /api/pulpits  
+{
+	"pulpit": "pulp",
+    "pulpit_name": "PULP",
+    "faculty": "ИТ"
+}
+
+// PUT /api/pulpits  
+{
+	"pulpit": "pulp",
+    "pulpit_name": "PULP2",
+    "faculty": "ИТ"
+}
+  
+// DELETE /api/pulpits/pulp
+
+
+------------------------------ SUBJECT -----------------------------------------------------
+// GET /api/subjects
+
+// POST /api/subjects  
+{
+	"subject": "subj",
+    "subject_name": "SUBJ",
+    "pulpit": "ИСиТ"
+}
+
+// PUT /api/subjects  
+{
+	"subject": "subj",
+    "subject_name": "SUBJ2",
+    "pulpit": "ИСиТ"
+}
+  
+// DELETE /api/subjects/subj
+
+------------------------------ AUDITORIUM_TYPE -----------------------------------------------
+// GET /api/auditoriumstypes
+
+// POST /api/auditoriumstypes  
+{
+	"auditoriumtype": "audT",
+    "auditoriumtypename": "AUDT"
+}
+
+// PUT /api/auditoriumstypes  
+{
+	"auditoriumtype": "audT",
+    "auditoriumtypename": "AUDT2"
+}
+  
+// DELETE /api/auditoriumstypes/audT
+
+
+------------------------------ AUDITORIUM -----------------------------------------------
+// GET /api/auditoriums
+
+// POST /api/auditoriums
+{
+	"auditorium": "aud",
+	"auditoriumname": "AUD",
+	"auditoriumcapacity": 95,
+    "auditoriumtype": "ЛК"
+}
+
+// PUT /api/auditoriums  
+{
+	"auditorium": "aud",
+	"auditoriumname": "AUD2",
+	"auditoriumcapacity": 55,
+    "auditoriumtype": "ЛК"
+}
+  
+// DELETE /api/auditoriums/aud
+
+
+
+
+
+
+
+
+
+
+
+
+

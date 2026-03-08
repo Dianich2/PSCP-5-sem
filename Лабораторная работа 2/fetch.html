@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>02-05</title>
+    </head>
+    <body>
+        <h1>Данные студента, полученные с помощью Fetch</h1>
+        <p id="student-data"></p>
+        <script>
+            fetch('http://localhost:5000/api/name')
+            .then(response=>{
+                if(!response.ok){
+                    document.getElementById('student-data').textContent = 'Статус: ' + response.status;
+                    return new Promise(() => {});
+                }
+                else{
+                    return response.text();
+                }
+            })
+            .then(studentData =>{
+                document.getElementById('student-data').textContent = studentData;
+            })
+            .catch(err =>{
+                document.getElementById('student-data').textContent = 'Ошибка: ' + err;
+            })
+        </script>
+    </body>
+</html>
